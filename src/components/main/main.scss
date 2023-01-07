@@ -1,0 +1,120 @@
+$medium: 440px;
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .copy-success {
+    color: red;
+    align-self: end;
+    font-size: 1.2rem;
+  }
+  .password-field {
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    input {
+      color: rgb(1, 1, 113);
+      border: none;
+      width: 82%;
+      height: 3rem;
+      text-indent: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      width: 7%;
+      cursor: pointer;
+      .regenerate-btn {
+        color: red;
+        font-size: 1.5rem;
+      }
+      .copy-btn {
+        color: rgb(24, 3, 120);
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+      }
+    }
+
+    button:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+  }
+  .range {
+    margin-bottom: 2rem;
+    label {
+      color: white;
+      input {
+        width: 94%;
+        cursor: pointer;
+      }
+    }
+    span {
+      color: white;
+      font-weight: bold;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  }
+  form {
+    .checkboxes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      label {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: sans-serif;
+        font-size: 0.7rem;
+        flex-basis: 23%;
+        input {
+          height: 15px;
+          width: 15px;
+          margin-right: 0.3rem;
+        }
+      }
+      @media screen and (min-width: $medium) {
+        label {
+          font-size: 1rem;
+          input {
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+    }
+    button {
+      width: 100%;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      background: white;
+      color: rgb(0, 0, 124);
+      padding: 1rem 1.5rem;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: none;
+    }
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    button:hover {
+      transform: scale(1.0125);
+      box-shadow: 2px 2px 7px #ccc;
+    }
+  }
+}
